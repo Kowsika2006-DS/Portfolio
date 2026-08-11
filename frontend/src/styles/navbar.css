@@ -1,0 +1,193 @@
+.portfolio-navbar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+
+  background: rgba(5, 8, 22, 0.75);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar-wrapper {
+  height: 75px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #fff;
+
+  transition: 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: var(--primary);
+}
+
+.logo-bracket {
+  color: var(--primary);
+
+  margin: 0 3px;
+}
+
+.desktop-nav {
+  display: flex;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.nav-link-custom {
+  color: var(--text-secondary);
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  position: relative;
+
+  transition: 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -8px;
+
+  width: 0;
+
+  height: 2px;
+
+  background: var(--primary);
+
+  transition: 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #fff;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+
+.resume-btn {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  background: rgba(0, 217, 255, 0.1);
+
+  border: 1px solid rgba(0, 217, 255, 0.35);
+
+  color: var(--primary);
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: var(--primary);
+
+  color: #020617;
+
+  transform: translateY(-2px);
+}
+
+.mobile-menu-btn {
+  display: none;
+
+  background: none;
+
+  border: none;
+
+  color: #fff;
+
+  font-size: 26px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 991px) {
+
+  .desktop-nav,
+  .portfolio-navbar > .container > .navbar-wrapper > .resume-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px 0 20px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  .mobile-nav-link {
+    padding: 12px 10px;
+
+    color: var(--text-secondary);
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+  }
+
+  .mobile-nav-link:hover {
+    color: var(--primary);
+
+    background: rgba(0, 217, 255, 0.06);
+  }
+
+  .mobile-resume {
+    margin-top: 10px;
+
+    justify-content: center;
+  }
+
+}

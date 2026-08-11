@@ -1,0 +1,519 @@
+.about-section {
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* ================= BACKGROUND ================= */
+
+.about-bg-glow {
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  left: -200px;
+  top: 25%;
+
+  border-radius: 50%;
+
+  background: #7c3aed;
+
+  filter: blur(150px);
+
+  opacity: 0.08;
+
+  pointer-events: none;
+}
+
+
+/* ================= HEADING ================= */
+
+.section-heading-wrapper {
+  margin-bottom: 60px;
+}
+
+.section-heading-wrapper .section-description {
+  margin-top: 15px;
+}
+
+
+/* ================= CONTENT ================= */
+
+.about-content {
+  row-gap: 50px;
+}
+
+
+/* ================= PROFILE CARD ================= */
+
+.about-profile-card {
+  min-height: 430px;
+
+  padding: 40px 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+.about-profile-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 217, 255, 0.05);
+
+  filter: blur(20px);
+}
+
+
+/* ================= PROFILE ORBIT ================= */
+
+.profile-orbit {
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px dashed rgba(0, 217, 255, 0.35);
+
+  position: relative;
+
+  animation: profileRotate 15s linear infinite;
+}
+
+
+.profile-orbit::before,
+.profile-orbit::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+}
+
+
+.profile-orbit::before {
+  width: 12px;
+  height: 12px;
+
+  background: var(--primary);
+
+  top: 12px;
+  right: 25px;
+
+  box-shadow:
+    0 0 15px var(--primary);
+}
+
+
+.profile-orbit::after {
+  width: 8px;
+  height: 8px;
+
+  background: #7c3aed;
+
+  bottom: 25px;
+  left: 15px;
+
+  box-shadow:
+    0 0 15px #7c3aed;
+}
+
+
+@keyframes profileRotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+.profile-initial {
+  width: 135px;
+  height: 135px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 60px;
+  font-weight: 700;
+
+  color: #fff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #0c2036,
+      #15102c
+    );
+
+  border: 1px solid rgba(0, 217, 255, 0.2);
+
+  box-shadow:
+    0 0 50px rgba(0, 217, 255, 0.08);
+
+  animation: profileCounterRotate 15s linear infinite;
+}
+
+
+@keyframes profileCounterRotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+
+}
+
+
+/* ================= PROFILE INFO ================= */
+
+.profile-info {
+  margin-top: 25px;
+}
+
+
+.profile-info h3 {
+  font-size: 24px;
+
+  margin-bottom: 5px;
+}
+
+
+.profile-info p {
+  color: var(--primary);
+
+  margin-bottom: 3px;
+
+  font-size: 14px;
+}
+
+
+.profile-info span {
+  color: #65728a;
+
+  font-size: 12px;
+}
+
+
+/* ================= STATUS ================= */
+
+.profile-status {
+  margin-top: 25px;
+
+  padding: 8px 13px;
+
+  border-radius: 20px;
+
+  background: rgba(0, 255, 163, 0.05);
+
+  border: 1px solid rgba(0, 255, 163, 0.12);
+
+  color: #8493a8;
+
+  font-size: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.profile-status span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #00ffa3;
+
+  box-shadow:
+    0 0 8px #00ffa3;
+}
+
+
+/* ================= ABOUT TEXT ================= */
+
+.about-text {
+  padding-left: 30px;
+}
+
+
+.about-text p {
+  color: var(--text-secondary);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+
+  margin-bottom: 18px;
+}
+
+
+.about-intro {
+  font-size: 17px !important;
+}
+
+
+.about-text strong {
+  color: #e5edff;
+}
+
+
+.highlight-text {
+  color: var(--primary) !important;
+}
+
+
+.cgpa-highlight {
+  color: #00ffa3 !important;
+}
+
+
+/* ================= FOCUS ================= */
+
+.focus-area {
+  margin-top: 30px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.focus-area h4 {
+  font-size: 14px;
+
+  margin-bottom: 15px;
+
+  color: #fff;
+}
+
+
+.focus-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+
+.focus-list span {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #aeb8ca;
+
+  font-size: 11px;
+
+  transition: 0.3s ease;
+}
+
+
+.focus-list span svg {
+  color: var(--primary);
+
+  font-size: 14px;
+}
+
+
+.focus-list span:hover {
+  border-color: rgba(0, 217, 255, 0.3);
+
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+
+/* ================= LINK ================= */
+
+.about-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 25px;
+
+  color: var(--primary);
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+
+.about-link svg {
+  transition: 0.3s ease;
+}
+
+
+.about-link:hover {
+  color: #fff;
+}
+
+
+.about-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+
+/* ================= HIGHLIGHTS ================= */
+
+.about-highlights {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 15px;
+
+  margin-top: 70px;
+}
+
+
+.highlight-card {
+  padding: 22px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+.highlight-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(0, 217, 255, 0.07);
+
+  color: var(--primary);
+
+  font-size: 20px;
+
+  flex-shrink: 0;
+}
+
+
+.highlight-card h3 {
+  font-size: 20px;
+
+  margin: 0 0 3px;
+
+  color: #fff;
+}
+
+
+.highlight-card p {
+  margin: 0;
+
+  color: #65728a;
+
+  font-size: 10px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+
+  .about-text {
+    padding-left: 0;
+  }
+
+  .about-highlights {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 576px) {
+
+  .about-profile-card {
+    min-height: 380px;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .focus-list {
+    flex-direction: column;
+  }
+
+  .focus-list span {
+    width: 100%;
+  }
+
+}
