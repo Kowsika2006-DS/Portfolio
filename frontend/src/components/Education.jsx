@@ -93,7 +93,7 @@ const Education = () => {
                   </span>
 
                   <strong>
-                    8.9
+                    8.819
                   </strong>
 
                   <small>
