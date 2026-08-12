@@ -19,7 +19,7 @@ const About = () => {
     },
     {
       icon: <FiAward />,
-      number: "8.9",
+      number: "8.819",
       label: "Current CGPA",
     },
     {
