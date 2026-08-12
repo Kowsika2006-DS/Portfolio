@@ -161,7 +161,7 @@ const About = () => {
 
                 With a current{" "}
                 <strong className="cgpa-highlight">
-                  CGPA of 8.9
+                  CGPA of 8.819
                 </strong>
                 , I continuously explore new technologies and
                 challenge myself to build innovative solutions
