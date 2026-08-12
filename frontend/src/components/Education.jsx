@@ -234,7 +234,7 @@ const Education = () => {
           <div className="academic-score">
 
             <strong>
-              8.9
+              8.819
             </strong>
 
             <span>
