@@ -220,7 +220,7 @@ const Education = () => {
 
             <h3>
               Maintaining a strong{" "}
-              <strong>8.9 CGPA</strong>
+              <strong>8.819 CGPA</strong>
             </h3>
 
             <p>
